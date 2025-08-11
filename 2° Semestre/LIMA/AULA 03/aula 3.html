@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Formulario</title>
+</head>
+<body>
+    <center><h1> Lanchonete Seu Zé </h1>
+    <hr>
+    <h3> Peça seu Lanche! </h3>
+    <p>
+   
+    <form action=""method=""> 
+       <label for="nome">Nome Completo</label>
+    </form>
+    <input type="text" id="nome"placeholder="Insira seu nome"required/>
+</p>
+<p>
+    <label for="datanasc">Data de Nascimento</label>
+    <input id="datanasc" type="date" />
+</p>
+<p>
+    <label for ="indica">Voce nos indicaria? 0 a 5</label>
+    <input id = "indica" type ="number" min="0" max ="5"/>
+</p>
+<p>
+    <label for = "email"> E-mail</label>
+    <input id = "email" type="email" placeholder="informe seu E-mail" required />
+    </p>
+    <p>
+    <label for = "cor"> Cor Favorita </label>
+    <input id = "cor" type="color" />
+    </p>
+    <p>
+        <label for="volume">Em qual volume voce ouve musica ( 0 a 100 )</label>
+        <input id ="volume" type="range" min = "0" max = "100" value="50" oninput = "valorVolume.textContent = this.value"/>
+        <span id="valorVolume">50</span>
+        <style>
+        #volume {
+            accent-color: red;
+        } 
+
+        </style>
+    </p>
+<fieldset>
+    <legend>Genero</legend>
+    <input type="radio" id="masc"
+    name="genero"/>
+    <style>
+        #masc {
+            accent-color: rgb(255, 0, 0);
+        }
+    </style>
+    <label for="masc">Masculino</label>
+    <input type ="radio" id="fem" name="genero"/>
+     <style>
+        #fem {
+            accent-color: rgb(255, 0, 153);
+        }
+    </style>
+    <label for ="fem">Feminino</label>
+</fieldset>
+<br>
+<fieldset>
+    <legend> Monte seu lanche</legend>
+    <input type = "checkbox" id="salada" />
+    <label for="salada">Salada</label>
+         <style>
+        #salada {
+            accent-color: rgb(4, 255, 0);
+        }
+    </style>
+    <!--------------------------------->
+    <br>
+    <input type = "checkbox" id="bacon" />
+    <label for="bacon">Bacon</label>
+             <style>
+        #bacon {
+            accent-color: rgb(255, 0, 0);
+        }
+    </style>
+    <!--------------------------------->
+    <br>
+    <input type = "checkbox" id="hamburger" />
+    <label for="hamburger">Hamburger</label>
+                 <style>
+        #hamburger {
+            accent-color: rgb(75, 33, 33);
+        }
+    </style>
+    <!--------------------------------->
+    <br>
+    <input type = "checkbox" id="cebola" />
+    <label for="cebola">Cebola Frita</label>
+                     <style>
+        #cebola {
+            accent-color: rgb(208, 205, 12);
+        }
+    </style>
+    <!--------------------------------->
+    <br>
+    <input type = "checkbox" id="queijo" />
+    <label for="queijo">Queijo</label>
+                     <style>
+        #queijo {
+            accent-color: rgb(242, 255, 0);
+        }
+    </style>
+</fieldset>
+<fieldset>
+     <input type="checkbox" id="cocalata" />
+                <label for="cocalata">Coca-cola Lata - R$8,00</label>
+                <img src = "cocalata.png" width = "150" height = "150">
+                <input type="checkbox" id="cocaks" />
+                <label for="cocaks">Coca-cola KS - R$4,00</label>
+                <img src = "cocaks.png" width = "150" height = "150">
+                <input type="checkbox" id="coca2l" />
+                <label for="coca2l">Coca-cola 2L - R$12,00</label>
+                <img src = "coca2l.png" width = "150" height = "150">
+                <input type="checkbox" id="mogi600" />
+                <label for="mogi600">Mogi 600ml - R$5,00</label>
+                <img src = "mogi600.png" width = "150" height = "150">
+</fieldset>
+<br>
+<label for="info"> Informações Adcionais</label>
+<textarea id="info"></textarea>
+<br>
+<br>
+<label for="cidade">Informe a Cidade </label>
+<select id="cidade">
+    <option>Jaguariuna</option>
+    <option>Pedreira</option>
+    <option>Amparo</option>
+</select>
+</center>
+</body>
+</body>
+</html>
