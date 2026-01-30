@@ -1,0 +1,20 @@
+//login git
+
+git config --global user.name "VICENZOvava"
+git config --global user.email "varandasvicenzo1@gmail.com"
+
+
+//clonar repositório
+
+git clone https://github.com/VICENZOvava/SENAI-DES.git
+
+
+//atualizar repositório
+git add .  //adciona as alterações feitas
+ 
+git commit -m "comentario" // valida as alterações feitas
+
+git push //envia as alterações
+
+//atualizar repositório local
+git pull 
