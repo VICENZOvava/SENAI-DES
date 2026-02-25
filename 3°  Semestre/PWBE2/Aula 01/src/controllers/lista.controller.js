@@ -26,6 +26,12 @@ const cadastrarCliente = async (req, res) => {
     try{
          const dados = req.body;
 
+          let nomeCompleto = "João Silva";
+          let partes = nomeCompleto.split(" ");
+
+          console.log(partes);
+          
+            
          const novoCliente = await prisma.cliente.create({
             data: dados
          });
