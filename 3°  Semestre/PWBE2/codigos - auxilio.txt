@@ -52,3 +52,13 @@ npx prisma migrate dev
 npx prisma generate
 
 ---------------------------
+
+
+
+
+INSOMNIA MAIS FACIL 
+
+
+npm i backend-aula
+
+----  npx i backend-aula -insomnia
