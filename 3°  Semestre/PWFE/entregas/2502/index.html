@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja - Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Loja - Produtos</h1>
+    <button onclick="abrirCarrinho()">🛒(<span id="contador">0</span>)</button>
+</header>
+
+<main id="listaProdutos" class="grid"></main>
+
+<!-- MODAL CARRINHO -->
+<div id="modalCarrinho" class="modal">
+    <div class="modal-content">
+        <h2>Carrinho de Compras</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Qtd</th>
+                    <th>Preço</th>
+                    <th>Remover</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaCarrinho"></tbody>
+        </table>
+
+        <h3 id="total"></h3>
+
+        <div class="modal-buttons">
+            <button onclick="finalizarPedido()">Fazer Pedido</button>
+            <button onclick="fecharCarrinho()">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

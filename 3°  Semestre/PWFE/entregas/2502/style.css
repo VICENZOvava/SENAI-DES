@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f4f8;
+}
+
+/* HEADER */
+header {
+    background: #1f2937;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background: #3b82f6;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #2563eb;
+}
+
+/* GRID PRODUTOS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    background: #e5e7eb;
+    border-radius: 8px;
+}
+
+.card h4 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #059669;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 25px;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f3f4f6;
+}
+
+/* BOTÕES MODAL */
+.modal-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-buttons button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modal-buttons button:first-child {
+    background: #3b82f6;
+    color: white;
+}
+
+.modal-buttons button:last-child {
+    background: #ef4444;
+    color: white;
+}
+
+.modal-buttons button:hover {
+    opacity: 0.9;
+}
